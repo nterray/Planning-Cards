@@ -223,19 +223,26 @@ button {  width: auto; overflow: visible; }
  /* Primary Styles
     Author: Nicolas Terray
  */
-
-#main ul {
+body {
+  background-color: darkgreen;
+  background: -moz-radial-gradient(center top, circle closest-corner, #66CC00 0%, darkgreen 100%);
+  background: -webkit-gradient(radial, center top, 0, center top, 1000, from(#66CC00), to(darkgreen));
+}
+#main ul,
+#back ul {
   list-style-type: none;
   margin: 0;
 }
 
-#main li {
-  border:1px solid gray;
+#main li,
+#back li {
+  background: white;
+  border:0.1in solid white;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  width:  2.3in;
-  height: 3.3in;
+  width:  2.1in;
+  height: 3.1in;
   padding: 0.1in;
   position: relative;
   text-align: center;
@@ -257,7 +264,11 @@ button {  width: auto; overflow: visible; }
   line-height: 3.3in;
 }
 
-
+#back li {
+  background-color: #00c;
+  background: -moz-radial-gradient(-50px -50px, circle closest-corner, #69F 0%, #00c 100%);
+  background: -webkit-gradient(radial, left top, 0, left top, 1000, from(#69F), to(#00c));
+}
 
 
 
